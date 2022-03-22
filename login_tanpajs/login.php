@@ -3,9 +3,6 @@ session_start();
 require_once('db.php');
 if (isset($_POST['nip']))
 {
-	//cek capta
-	
-		//cek 
 		$nip=$_POST['nip'];
 		$password=md5($_POST['passwd']);
 		$hs=mysqli_query($DB,"SELECT * FROM user WHERE nip='".$nip."' AND password='".$password."'
@@ -16,8 +13,6 @@ if (isset($_POST['nip']))
 			$_SESSION['nip']=$dt['nip'];
 			$_SESSION['iduser']=$dt['iduser'];
 			$_SESSION['nama']=$dt['nama'];
-			// ob_end_clean();
-			// echo $_SESSION['nip'];
 			die(header('Location: beranda.php'));
 		}
 		else
