@@ -1,0 +1,30 @@
+@charset "utf-8";
+* {
+	font-family: Calibri;
+}
+
+.login {
+	margin-top:200px;
+	background:#fefefe;
+	padding:20px;
+	border:1px #CCCCCC solid;
+	border-radius:5px;
+}
+.login h1 {
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+h2 {
+	margin-top:0px;
+    padding: 10px;
+	font-weight: bold;
+    text-align: center;
+   
+}
+
+label {
+	margin-top:20px;
+}
