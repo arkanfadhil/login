@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2022 at 07:12 AM
+-- Generation Time: Mar 28, 2022 at 07:28 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -85,6 +85,26 @@ INSERT INTO `pegawai` (`id`, `nip`, `nama`, `alamat`) VALUES
 (49, '1.28938E+13', 'Fakhrana Sangadji', 'Sanana'),
 (50, '218937912', 'Amirudin Umaternate', 'Sanana');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `iduser` int(11) NOT NULL,
+  `nip` varchar(19) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `nama` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`iduser`, `nip`, `password`, `nama`) VALUES
+(1, '199608142020121003', '0192023a7bbd73250516f069df18b500', 'Arkan Fadhil');
+
 --
 -- Indexes for dumped tables
 --
@@ -96,6 +116,12 @@ ALTER TABLE `pegawai`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`iduser`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -104,4 +130,10 @@ ALTER TABLE `pegawai`
 --
 ALTER TABLE `pegawai`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
