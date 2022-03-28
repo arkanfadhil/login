@@ -1,5 +1,5 @@
-# login
-Form Login ini dibuat 2 folder yakni:
-folder "login_css_js" yang menggunakan bootstrap untuk css, custom pesan validasi form dengan jquery dan pemanggilan laman beranda melalui laman utama (template), kemudian
-folder "login_tanpajs" yang menggunakan php dan html saja tanpa menautkan file css maupun js.
-Proses login dilakukan dengan validasi nip dan password pada file sql yang telah upload di repo ini dengan nama database "dblogin" dan nama file sqlnya yakni "dblogin.sql"
+# Task 2
+1. Menampilkan data 50 row dibagi setiap halamannya 10 row menggunakan pagination:
+2. Menambahkan kolom pencarian di atas table dimana ketika di klik page 1 atau page 2 pada pagination urutan dan text pada kolom search tidak hilang;
+3. Menambahkan Sorting pada header table asc dan desc;
+4. Tidak Menggunakan Datatable dan generate pagination;
