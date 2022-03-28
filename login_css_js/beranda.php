@@ -6,7 +6,6 @@
 <h3>NIP Anda Adalah: <?= $_SESSION['nip'] ?></h3>
 <div class="container" align="center">
     <h3 class="text-center">Data Pegawai</h3><br />
-    <div class="table-responsive" id="tabel_karyawam">
       <p></p>
       <div class="table-responsive" id="data"></div>  
     </div>
