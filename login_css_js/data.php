@@ -147,11 +147,11 @@
                     $end_number = ($page < ($jumlah_page - $jumlah_number))? $page + $jumlah_number : $jumlah_page;
               
                     if($page == 1){
-                      echo '<li class="page-item disabled"><a class="page-link" href="#">First</a></li>';
+                      echo '<li class="page-item disabled"><a class="page-link" href="#">Awal</a></li>';
                       echo '<li class="page-item disabled"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>';
                     } else {
                       $link_prev = ($page > 1)? $page - 1 : 1;
-                      echo '<li class="page-item halaman" id="1"><a class="page-link" href="#">First</a></li>';
+                      echo '<li class="page-item halaman" id="1"><a class="page-link" href="#">Awal</a></li>';
                       echo '<li class="page-item halaman" id="'.$link_prev.'"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>';
                     }
        
@@ -162,11 +162,11 @@
        
                     if($page == $jumlah_page){
                       echo '<li class="page-item disabled"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>';
-                      echo '<li class="page-item disabled"><a class="page-link" href="#">Last</a></li>';
+                      echo '<li class="page-item disabled"><a class="page-link" href="#">Akhir</a></li>';
                     } else {
                       $link_next = ($page < $jumlah_page)? $page + 1 : $jumlah_page;
                       echo '<li class="page-item halaman" id="'.$link_next.'"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>';
-                      echo '<li class="page-item halaman" id="'.$jumlah_page.'"><a class="page-link" href="#">Last</a></li>';
+                      echo '<li class="page-item halaman" id="'.$jumlah_page.'"><a class="page-link" href="#">Akhir</a></li>';
                     }
                   ?>
                 </ul>
