@@ -6,3 +6,6 @@ Task 2 dikerjakan pada login_css_js dengan update sebagai berikut:
 4. Tidak Menggunakan Datatable dan generate pagination;
 
 note: diperlukan impor kembali dblogin.sql untuk penambahan tabel pegawai
+login:
+nip: 199608142020121003
+password: admin123
